@@ -8,6 +8,9 @@
 `main.cpp`内で，最適化させたい連続値の数と同じ長さを持つベクトル`v`と`dxnes`のインスタンス作成し，`dxnes_start( v )`
 
 `$ cd build`
+
 `$ cmake ..`
+
 `$ make`
+
 `$ ./a.out`
