@@ -1,9 +1,13 @@
-- 👋 Hi, I’m @shimizu12
-- 👀 I’m interested in data science
-- 🌱 I’m currently learning C++ and R lang
-- 📫 How to reach me b21718bb@aitech.ac.jp
+## 進化計算ライブラリ
+本ライブラリは複数の連続値の最適化ができます．
+最適化アルゴリズムにはDX-NESが採用されています．
 
-<!---
-shimizu12/shimizu12 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+
+## How to use
+`eval/evaluator.cpp`内の`evalFunc()`が評価関数になります，適宜上書きしてください．
+`main.cpp`内で，最適化させたい連続値の数と同じ長さを持つベクトル`v`と`dxnes`のインスタンス作成し，`dxnes_start( v )`
+
+`$ cd build`
+`$ cmake ..`
+`$ make`
+`$ ./a.out`
