@@ -5,7 +5,7 @@
 
 #include <vector>
 #include <random>
-#include "../Eigen/Dense"
+#include <Eigen/Core>
 
 
 using namespace std;
