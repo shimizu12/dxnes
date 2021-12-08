@@ -6,7 +6,7 @@
 ## How to use
 `eval/evaluator.cpp`内の`evalFunc()`が評価関数になります，適宜上書きしてください．
 
-`main.cpp`内で，最適化させたい連続値の数と同じ長さを持つベクトル`v`と`dxnes`のインスタンス作成し，`dxnes_start( v )`
+`main.cpp`内で，`dxnes`のインスタンスと最適化させたい連続値の数と同じ長さを持つベクトル`v`を宣言し，`dxnes_start( v )`
 
 `$ cd build`<br>
 `$ cmake ..`<br>
