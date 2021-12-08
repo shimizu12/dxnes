@@ -1,14 +1,26 @@
-## 進化計算ライブラリ
+# 進化計算ライブラリ
 本ライブラリは複数の連続値の最適化ができます．
 最適化アルゴリズムにはDX-NESが採用されています．
 
 
 ## How to use
-`eval/evaluator.cpp`内の`evalFunc()`が評価関数になります，適宜上書きしてください．
+`$ brew install eigen`<br>
 
-`main.cpp`内で，`dxnes`のインスタンス`n`と最適化させたい連続値の数と同じ長さを持つベクトル`v`を宣言し，`n.dxnes_start( v )`
-
+`$ mkdir build`<br>
 `$ cd build`<br>
 `$ cmake ..`<br>
+
 `$ make`<br>
 `$ ./a.out`<br>
+
+
+## 構成
+./
+ +-- calVal/
+ |     +-- calcurateVector : ベクトル・行列計算をまとめたもの
+ |
+ +-- dxnes/
+ |     +-- dxnes : 進化計算アルゴリズムDXNESのアルゴリズムが実装してある
+ |
+ +-- eval/
+       +-- evaluator : 評価関数といくつかのベンチマーク関数の実装
